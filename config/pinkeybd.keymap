@@ -28,10 +28,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp W             &kp E      &kp R  &kp T          &kp ESC         &kp Y      &kp U      &kp I              &kp O       &kp P
-&kp A       &kp S             &kp D      &kp F  &kp G          &kp SCROLLLOCK  &kp H      &kp J      &kp K              &kp L       &kp ENTER
-&kp Z       &kp X             &kp C      &kp V  &kp B          &mkp LCLK       &kp N      &kp M      &kp COMMA          &kp PERIOD  &kp SLASH
-&kp LSHIFT  &lt 1 LANGUAGE_5  &kp SPACE  &to 2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp ENTER  &kp RIGHT_CONTROL
+&kp Q       &kp W        &kp E        &kp R  &kp T          &kp ESC         &kp Y      &kp U      &kp I              &kp O       &kp P
+&kp A       &kp S        &kp D        &kp F  &kp G          &kp SCROLLLOCK  &kp H      &kp J      &kp K              &kp L       &kp ENTER
+&kp Z       &kp X        &kp C        &kp V  &kp B          &mkp LCLK       &kp N      &kp M      &kp COMMA          &kp PERIOD  &kp SLASH
+&kp LSHIFT  &lt 1 LANG1  &lt 2 LANG2  &to 2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp ENTER  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&rot_kp PG_DN PG_UP>;
@@ -65,7 +65,7 @@
 &none       &kp COMMA  &kp END    &kp LEFT_BRACE   &kp SINGLE_QUOTE  &kp ESC     &mkp LCLK  &mkp RCLK  &kp PG_UP   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp HOME    &kp LS(S)  &kp END    &kp RIGHT_BRACE  &kp U             &kp SLCK    &mkp MCLK  &kp HOME   &kp PG_DN   &kp END               &kp SEMICOLON
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)        &mkp LCLK         &mkp RCLK   &kp APOS   &kp EQUAL  &kp BSLH    &kp GRAVE             &kp INS
-&kp LSHIFT  &mo 5      &kp SPACE  &to 0            &kp PSCRN         &kp RSHIFT  &kp ENTER  &none      &kp RSHIFT
+&kp LSHIFT  &mo 5      &to 3      &to 0            &kp PSCRN         &kp RSHIFT  &kp ENTER  &none      &kp RSHIFT
             >;
 
             sensor-bindings = <&rot_kp PAGE_DOWN PAGE_UP>;
