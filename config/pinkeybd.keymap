@@ -49,11 +49,13 @@
 
         Lower_layer {
             bindings = <
-&kp PLUS       &kp N7            &kp NUMBER_8      &kp NUMBER_9      &kp LS(AMPERSAND)  &kp PAUSE_BREAK  &kp LPAR   &kp RPAR   &kp UP     &kp LBKT           &kp RBKT
-&kp NUMBER_0   &kp LS(NUMBER_4)  &kp NUMBER_5      &kp NUMBER_6      &kp PERCENT        &kp SCROLLLOCK   &kp BSPC   &kp LEFT   &kp DOWN   &kp RIGHT          &kp DEL
-&kp LC(EQUAL)  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp DOLLAR         &kp TAB          &kp APOS   &kp EQUAL  &kp BSLH   &kp DOUBLE_QUOTES  &kp INS
-&kp LSHIFT     &none             &kp SPACE         &to 0             &kp PSCRN          &kp RSHIFT       &kp ENTER  &mo 4      &kp RCTRL
+&kp PLUS      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp AMPERSAND  &kp PAUSE_BREAK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP                &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+&kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERCENT    &kp SCROLLLOCK   &kp BSPC              &kp LEFT               &kp DOWN              &kp RIGHT          &kp DEL
+&kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOLLAR     &kp TAB          &kp SINGLE_QUOTE      &kp UNDERSCORE         &kp NON_US_BACKSLASH  &kp DOUBLE_QUOTES  &kp EXCLAMATION
+&kp LSHIFT    &none         &kp SPACE     &to 0         &kp PSCRN      &kp RSHIFT       &kp RIGHT_CONTROL     &kp RIGHT_ALT          &kp RCTRL
             >;
+
+            sensor-bindings = <&rot_updown>;
         };
 
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
