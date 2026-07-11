@@ -9,13 +9,11 @@
 
 / {
     behaviors {
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "ROT_KP";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-
-            tap-ms = <10>;
+        rot_updown: rot_updown {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROT_UPDOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
 
@@ -37,7 +35,7 @@
 &kp LSHIFT  &lt 1 LANG1  &lt 2 SPACE  &lt 3 LANG2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp BACKSPACE  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&rot_kp A K_SCROLL_UP>;
+            sensor-bindings = <&rot_updown>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
