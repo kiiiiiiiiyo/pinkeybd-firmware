@@ -5,10 +5,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&lt {
-    tapping-term-ms = <200>;
-    flavor = "tap-unless-interrupted";
-};
+&lt { tapping-term-ms = <200>; };
 
 / {
     behaviors {
@@ -39,7 +36,7 @@
 &kp LSHIFT  &lt 1 LANG1  &lt 2 SPACE  &lt 3 LANG2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp BACKSPACE  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&rot_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&rot_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
