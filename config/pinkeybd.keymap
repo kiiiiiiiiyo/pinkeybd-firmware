@@ -34,7 +34,7 @@
 &kp LSHIFT  &lt 1 LANG1  &lt 2 LANG2  &to 2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp ENTER  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&rot_kp PG_DN PG_UP>;
+            sensor-bindings = <&rot_kp PAGE_DOWN PAGE_UP>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
