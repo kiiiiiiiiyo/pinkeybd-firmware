@@ -13,7 +13,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "ROT_KP";
             #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+            bindings = <&kp>, <&kp>;
+
+            tap-ms = <10>;
         };
     };
 
@@ -35,7 +37,7 @@
 &kp LSHIFT  &lt 1 LANG1  &lt 2 SPACE  &lt 3 LANG2  &kp BACKSPACE  &mkp RCLK       &kp SPACE  &kp BACKSPACE  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&rot_kp SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&rot_kp A K_SCROLL_UP>;
         };
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
